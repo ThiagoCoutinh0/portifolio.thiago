@@ -693,6 +693,7 @@ section .container {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+/*-
 .services .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
@@ -768,7 +769,64 @@ section .container {
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
   color: #fff;
+}*/
+
+.services .icon-box {
+  text-align: center;
+  background: rgba(204, 204, 204, 0.1);
+  padding: 20px;
+  transition: all ease-in-out 0.3s;
 }
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 128px;
+  height: 128px;
+  background: #18d26e;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+
+.services .icon-box .icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: #fff;
+}
+
+.services .icon-box:hover {
+  background: #18d26e;
+  border-color: #18d26e;
+}
+
+.services .icon-box:hover .icon {
+  background: #fff;
+}
+
+.services .icon-box:hover .icon img {
+  filter: brightness(0.8);
+}
+
+.services .icon-box:hover h4 a {
+  color: #fff;
+}
+
+
 
 /*--------------------------------------------------------------
 # Portfolio
