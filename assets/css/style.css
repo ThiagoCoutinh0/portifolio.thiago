@@ -11,6 +11,28 @@
 --------------------------------------------------------------*/
 
 
+#toggleLanguage {
+  background-color: #333; /* Cor cinza escuro */
+  color: #fff; /* Cor do texto branca */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: fixed;
+  right: 20px; /* Ajusta a posição mais para a direita */
+  top: 20px; /* Ajusta a posição mais para baixo se necessário */
+  opacity: 0.8; /* Torna o botão um pouco transparente */
+  transition: opacity 0.3s;
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+}
+
+#toggleLanguage:hover {
+  opacity: 1; /* Aumenta a opacidade ao passar o mouse */
+}
+
+
 
 
 body {

@@ -31,12 +31,41 @@
 
 <body>
 
+  <button id="toggleLanguage" class="btn btn-primary">English</button>
+
+
   <!-- ======= Header ======= -->
   <header id="header">
-    <div class="container">
+    <div id="content-pt" class="content-language container">
 
       <h1><a href="index.html">Thiago Coutinho</a></h1>
       <h2>Analista de Sistemas, Infraestrutura Cloud e Cibersegurança </h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">Sobre mim</a></li>
+          <li><a class="nav-link" href="#resume">Currículo</a></li>
+          <li><a class="nav-link" href="#services">Certificações/Certificados</a></li>
+          <li><a class="nav-link" href="#portfolio">Portifólio</a></li>
+          <li><a class="nav-link" href="#contact">Contato</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      <div class="social-links">
+        <!--<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>-->
+        <a href="https://github.com/ThiagoCoutinh0" class="facebook"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/thiago_alves36/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/thiago-coutinho-719a551b8" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+    <div id="content-en" class="content-language container" style="display: none;">
+
+      <h1><a href="index.html">Thiago Coutinho</a></h1>
+      <h2>Systems Analyst, Cloud Infrastructure and Cybersecurity </h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -1256,6 +1285,8 @@ Além do meu background técnico, estou sempre buscando expandir meus horizontes
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="main.js"></script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
