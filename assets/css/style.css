@@ -32,6 +32,15 @@
   opacity: 1; /* Aumenta a opacidade ao passar o mouse */
 }
 
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  #toggleLanguage {
+    top: auto; /* Remove o valor superior */
+    bottom: 20px; /* Alinha o botão na parte inferior */
+  }
+}
+
+
 
 
 

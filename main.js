@@ -1,15 +1,19 @@
 document.getElementById('toggleLanguage').addEventListener('click', function() {
-    var ptContent = document.getElementById('content-pt');
-    var enContent = document.getElementById('content-en');
+    var sections = document.querySelectorAll('.content-language');
     var button = this;
 
-    if (ptContent.style.display === 'none') {
-        ptContent.style.display = 'block';
-        enContent.style.display = 'none';
+    sections.forEach(function(section) {
+        if (section.style.display === 'none') {
+            section.style.display = 'block';
+        } else {
+            section.style.display = 'none';
+        }
+    });
+
+    // Verifica qual idioma está visível para alterar o texto do botão
+    if (sections[0].style.display === 'block') {
         button.textContent = 'English';
     } else {
-        ptContent.style.display = 'none';
-        enContent.style.display = 'block';
         button.textContent = 'Português';
     }
 });
